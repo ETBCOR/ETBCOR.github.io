@@ -1,7 +1,8 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 1px;
   background: #151515 url("../images/bkg.png") 0 0;
+  background-repeat: repeat;
   color: #eaeaea;
   font: 16px;
   line-height: 1.5;
@@ -11,9 +12,10 @@ body {
 /* General & 'Reset' Stuff */
 
 .container {
-  width: 90%;
-  max-width: 600px;
+  width: 95%;
+  max-width: 800px;
   margin: 0 auto;
+  border-top: 20px;
 }
 
 section {
@@ -68,6 +70,11 @@ header h2 {
   color: #666;
 }
 
+#downloads {
+  position:relative;
+  margin: auto
+}
+
 #downloads .btn {
   display: inline-block;
   text-align: center;
@@ -80,6 +87,10 @@ header h2 {
 #main_content {
   width: 100%;
   -webkit-font-smoothing: antialiased;
+  background-image: url("../images/background.png");
+  padding: 20px;
+  border: 3px gray dotted;
+  border-radius: 10px
 }
 section img {
   max-width: 100%
@@ -190,9 +201,9 @@ hr {
 
 .btn {
   display: inline-block;
-  background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.3), rgba(35, 35, 35, 0.3) 50%, rgba(10, 10, 10, 0.3) 50%, rgba(0, 0, 0, 0.3));
+  background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.3), rgba(35, 35, 35, 0.3) 30%, rgba(10, 10, 10, 0.3) 30%, rgba(0, 0, 0, 0.3));
   padding: 8px 18px;
-  border-radius: 50px;
+  border-radius: 10px 10px 10px 10px;
   border: 2px solid rgba(0, 0, 0, 0.7);
   border-bottom: 2px solid rgba(0, 0, 0, 0.7);
   border-top: 2px solid rgba(0, 0, 0, 1);
@@ -202,7 +213,8 @@ hr {
   font-size: 13px;
   text-decoration: none;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  box-shadow: inset 0 2px 0 rgba(20, 20, 20, 100.05);
+  position: relative;
 }
 
 .btn:hover {
@@ -220,6 +232,11 @@ hr {
 .btn-github .icon {
   opacity: 0.6;
   background: url("../images/blacktocat.png") 0 0 no-repeat;
+}
+
+.btn-ocb .icon {
+  opacity: : 0.6;
+  background: url("../images/command_block.png");
 }
 
 /* Links
